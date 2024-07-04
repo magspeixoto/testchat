@@ -3,6 +3,7 @@
 use App\Events\MessageSent;
 use App\Models\ChatMessage;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -36,11 +37,11 @@ Route::get('/messages/{friend}', function (User $friend) {
        ->get();
 })->middleware(['auth']);
 
-Route::post('/messages/{friend}', function (User $friend) {
+Route::post('/messages/{friend}', function (Request $request, User $friend) {
     $message = ChatMessage::create([
         'sender_id' => auth()->id(),
         'receiver_id' => $friend->id,
-        'text' => request()->input('message')
+        'text' => $request->input('message')
     ]);
 
     broadcast(new MessageSent($message));
