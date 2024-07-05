@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab9d092bf02104eb1478dfc05278fbc1",
+    "content-hash": "d4d86df8f064740a38384b59f6b1668d",
     "packages": [
         {
             "name": "brick/math",
@@ -1531,16 +1531,16 @@
         },
         {
             "name": "laravel/reverb",
-            "version": "v1.0.0-beta10",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/reverb.git",
-                "reference": "78056b18086a5dcd0c50db8398e9be313e22624b"
+                "reference": "15e192405d39ce66a845e56ccefc207cd73c3429"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/reverb/zipball/78056b18086a5dcd0c50db8398e9be313e22624b",
-                "reference": "78056b18086a5dcd0c50db8398e9be313e22624b",
+                "url": "https://api.github.com/repos/laravel/reverb/zipball/15e192405d39ce66a845e56ccefc207cd73c3429",
+                "reference": "15e192405d39ce66a845e56ccefc207cd73c3429",
                 "shasum": ""
             },
             "require": {
@@ -1564,7 +1564,7 @@
                 "pestphp/pest": "^2.0",
                 "phpstan/phpstan": "^1.10",
                 "ratchet/pawl": "^0.4.1",
-                "react/async": "^4.0",
+                "react/async": "^4.2",
                 "react/http": "^1.9"
             },
             "type": "library",
@@ -1607,9 +1607,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/reverb/issues",
-                "source": "https://github.com/laravel/reverb/tree/v1.0.0-beta10"
+                "source": "https://github.com/laravel/reverb/tree/v1.0.0"
             },
-            "time": "2024-05-02T14:46:35+00:00"
+            "time": "2024-07-02T19:11:48+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -9294,14 +9294,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "laravel/reverb": 10
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
